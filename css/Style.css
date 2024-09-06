@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+}
+
+.snowman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sombrero */
+.hat-top {
+    width: 80px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 5px 5px 0 0;
+}
+
+.hat-brim {
+    width: 120px;
+    height: 10px;
+    background-color: blue;
+    margin-bottom: 5px;
+}
+
+/* Cabeza */
+.head {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid black;
+}
+
+/* Ojos detallados */
+.eye-container {
+    position: absolute;
+    top: 25px;
+}
+
+.left-eye {
+    left: 25px;
+}
+
+.right-eye {
+    right: 25px;
+}
+
+.outer-eye {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-eye {
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.nose {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 15px solid orange;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouth {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+/* Cuerpo medio */
+.body-middle {
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+}
+
+/* Cuerpo inferior */
+.body-bottom {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Botones */
+.button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.red {
+    background-color: red;
+    top: 30px;
+}
+
+.green {
+    background-color: green;
+    top: 60px;
+}
+
+.blue {
+    background-color: blue;
+    top: 90px;
+}
+
+/* Brazos ajustados */
+.arm {
+    width: 50px;
+    height: 5px;
+    background-color: brown;
+    position: absolute;
+    top: 60px;
+    transform: rotate(30deg);
+    border-radius: 50px;
+}
+
+.left-arm {
+    left: -50px;
+    transform: rotate(-30deg);
+}
+
+.right-arm {
+    right: -50px;
+    transform: rotate(30deg);
+}
